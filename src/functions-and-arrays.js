@@ -40,7 +40,17 @@ function midPointOfLevels(numbersAvg){
 }
 // Progression 4.2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
-
+function averageWordLength(wordsArr){
+  if(wordsArr==0){
+    return(null);
+  }
+  else{
+  var x;
+ var y; x=wordsArr[0].length+wordsArr[1].length+wordsArr[2].length+wordsArr[3].length+wordsArr[4].length+wordsArr[5].length+wordsArr[6].length+wordsArr[7].length+wordsArr[8].length+wordsArr[9].length;
+  y=x/wordsArr.length;
+return(y);
+}
+}
 // Progression #5: Unique arrays
 const wordsUnique = [
   'bread',
