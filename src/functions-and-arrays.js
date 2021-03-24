@@ -1,5 +1,12 @@
 // Progression #1: Greatest of the two numbers
-
+greatestOfTwoNumbers=(num1,num2)=>{
+if(num1>num2){
+  return(num1);
+}
+else{
+  return(num2);
+}
+}
 // Progression #2: The lengthy word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
