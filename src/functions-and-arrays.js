@@ -20,12 +20,24 @@ x=x+numbers[i];
 }
 return(x);
 }
-
-
 // Progression #4: Calculate the average
 // Progression 4.1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
-
+function midPointOfLevels(numbersAvg){
+  if(numbersAvg==0){
+    return(null);
+  }
+  else{
+  var x=0;
+  var i;
+  var y;
+  for(i=0;i<numbersAvg.length;i++){
+    x=x+numbersAvg[i];
+  }
+  y=x/numbersAvg.length;
+  return(y);
+}
+}
 // Progression 4.2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
