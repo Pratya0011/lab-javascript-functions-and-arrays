@@ -12,6 +12,15 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 
 // Progression #3: Net Price
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+function netPrice(numbers){
+  var x=0;
+  var i;
+for(i=0;i<numbers.length;i++){
+x=x+numbers[i];
+}
+return(x);
+}
+
 
 // Progression #4: Calculate the average
 // Progression 4.1: Array of numbers
