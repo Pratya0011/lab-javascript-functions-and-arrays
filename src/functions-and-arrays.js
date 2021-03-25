@@ -20,7 +20,34 @@ x=x+numbers[i];
 }
 return(x);
 }
-
+const mixed = [63, 122, 'audi', 61, true, 'volvo', '20', 'lamborghini', 38, 156];
+function add(mixed){
+  if(mixed==0){
+    return(0);
+  }
+else{
+  
+  function sum(mixed){
+    var z=0;
+    for(var i=0;i<mixed.length;i++){
+      if(typeof(mixed[i])=='number'){
+        z=z+mixed[i];
+      }
+      else if(typeof(mixed[i])=='string'){
+        z=z+mixed[i].length;
+      }
+      else if(typeof(mixed[i])=='boolean'){
+        z=z+mixed[i];
+      }
+      else{
+        throw Error("Unsupported data type sir or ma'am");
+      }
+    }
+    return(z);
+  }
+  return Number(sum(mixed));
+}
+}
 // Progression #4: Calculate the average
 // Progression 4.1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
