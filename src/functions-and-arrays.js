@@ -52,6 +52,7 @@ function averageWordLength(wordsArr){
 return(y);
 }
 }
+//avg of the mixed array
 // Progression #5: Unique arrays
 const wordsUnique = [
   'bread',
@@ -67,6 +68,21 @@ const wordsUnique = [
   'egg',
   'flour'
 ];
+function uniqueArray(wordsUnique){
+  if(wordsUnique==0){
+    return(null);
+  }
+  else{
+  var array=[];
+  var i=0;
+  for(i=0;i<wordsUnique.length;i++){
+    if(array.indexOf(wordsUnique[i])=== -1){
+      array.push(wordsUnique[i]);
+    }
+  }
+  return(array);
+}
+}
 
 // Progression #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
