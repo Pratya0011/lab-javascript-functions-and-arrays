@@ -9,7 +9,26 @@ else{
 }
 // Progression #2: The lengthy word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
-
+function findScaryWord(words){
+  if(words.length==0){
+    return(null);
+  }
+  else{
+    var i=0;
+    var j=0;
+    var count=0;
+    for(i=0;i<words.length;i++){
+      if(words[i].length>count){
+        count=words[i].length;
+      }
+    }
+    for(j=0;j<words.length;j++){
+      if(words[j].length==count){
+        return(words[j]);
+      }
+    }
+  }
+}
 // Progression #3: Net Price
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 function netPrice(numbers){
