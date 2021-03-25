@@ -53,6 +53,38 @@ return(y);
 }
 }
 //avg of the mixed array
+const mixedArr = [63, 122, 'audi', 61, true, 'volvo', '20', 'lamborghini', 38, 156];
+function avg(mixedArr){
+  if(mixedArr.length==0){
+    return(null);
+  }
+else{
+  var x;
+  var y;
+  function add(mixedArr){           //adding the mixed array
+    var z = 0;
+    var i=0;
+  for (i=0;i<mixedArr.length;i++) {
+    if (typeof (mixedArr[i]) == 'number'){
+      z= z+ mixedArr[i];
+    }
+    else if (typeof (mixedArr[i]) == 'string'){
+      z=z+mixedArr[i].length;
+    }
+    else if (typeof (mixedArr[i]) == 'boolean'){
+      z=z+mixedArr[i];
+  }
+    else{
+      throw Error("Data Unsupported");
+    }
+  }
+  return(z);    //returning the aded value
+  }
+x=add(mixedArr)/mixedArr.length;    //taking the added valie and finding the avg
+y = x.toFixed(2);                   //limiting the avg value to two decimal place
+return Number(y);                          //returning the final value
+}
+}
 // Progression #5: Unique arrays
 const wordsUnique = [
   'bread',
