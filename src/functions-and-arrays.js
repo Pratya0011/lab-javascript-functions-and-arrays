@@ -191,7 +191,22 @@ const wordsCount = [
   'disobedience',
   'matter'
 ];
-
+var x='matter'
+function howManyTimesElementRepeated(wordsCount,x){
+  if(wordsCount.length==0){
+    return(0);
+  }
+  else{
+    var i=0;
+    var count=0;
+    for(i=0;i<wordsCount.length;i++){
+      if(wordsCount[i]==x){
+        count++;
+      }
+    }
+    return(count);
+  }
+}
 // Progression #8: Bonus
 
 const matrix = [
