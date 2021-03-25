@@ -164,7 +164,19 @@ function uniqueArray(wordsUnique){
 
 // Progression #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
+function searchElement(wordsFind){
+  if(wordsFind.length==0){
+    return(null);
+  }
+  else{
+    var i=0;
+    for(i=0;i<wordsFind.length;i++){
+      var b= wordsFind.includes(wordsFind[i]);
+    }
+    return(b);
+  }
 
+}
 // Progression #7: Count repetition
 const wordsCount = [
   'machine',
