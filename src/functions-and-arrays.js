@@ -20,6 +20,7 @@ x=x+numbers[i];
 }
 return(x);
 }
+
 // Progression #4: Calculate the average
 // Progression 4.1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
