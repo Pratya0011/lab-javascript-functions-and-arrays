@@ -221,3 +221,32 @@ const matrix = [
   [24, 55, 58, 05, 66, 73, 99, 26, 97, 17],
   [21, 36, 23, 09, 75, 00, 76, 44, 20, 45]
 ];
+maximumProduct=(matrix)=>{
+  var max = 0,result;
+  // iterate the rows.
+  for (var i = 0; i < 10; i++){
+   // iterate the columns.
+      for (var j = 0; j < 10; j++){
+      // check the maximum product
+      // in horizontal row.
+          if ((j - 9) >= 0)
+          {
+              result = matrix[i][j] * matrix[i][j - 1] * matrix[i][j - 2] * matrix[i][j - 3] * matrix[i][j - 4] * matrix[i][j - 5] * matrix[i][j - 6] * matrix[i][j - 7] * matrix[i][j - 8] * matrix[i][j - 9];
+               
+              if (max < result){
+                  max = result;
+              }
+          }
+          // check the maximum product
+          // in vertical row.
+          if ((i - 9) >= 0)
+          {
+              result = matrix[i][j] * matrix[i - 1][j] * matrix[i - 2][j] * matrix[i - 3][j] * matrix[i - 4][j]* matrix[i - 5][j]* matrix[i - 6][j]* matrix[i - 7][j]* matrix[i - 8][j]* matrix[i - 9][j];
+               if (max < result){
+                  max = result;
+          }
+        }
+  }
+  }
+  return(max)
+}
